@@ -12,7 +12,7 @@ function NewChat() {
 
   const createNewChat = async () => {
     const doc = await addDoc(
-      collection(db, 'users', session?.user?.email!, "chats"),
+      collection(db, 'users', session?.user?.email!, 'chats'),
       { 
         messges: [],
         userId: session?.user?.email!,
