@@ -17,7 +17,9 @@
     "react-firebase-hooks": "^5.1.1",
     "react-hot-toast": "^2.4.0",
     "react-select": "^5.7.0",
-    "swr": "^2.0.3"
+    "react-ts-typewriter": "^0.1.8-b",
+    "swr": "^2.0.3",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
