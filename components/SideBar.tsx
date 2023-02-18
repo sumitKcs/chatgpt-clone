@@ -1,5 +1,6 @@
 'use client'
 
+import { XCircleIcon } from "@heroicons/react/24/outline";
 import { collection, orderBy, query } from "firebase/firestore";
 import { useSession,signOut } from "next-auth/react"
 import { useCollection } from 'react-firebase-hooks/firestore';
@@ -14,13 +15,15 @@ function SideBar() {
     const [chats, loading, error] = useCollection(
         session && query(collection(db, 'users', session?.user?.email!, "chats"), orderBy("createdAt", "asc"))
     )
+    
+  
   return (
-    <div className="p-2 flex flex-col h-screen " >
+    <div  id="side-bar" className="p-2 hidden md:flex flex-col h-screen" >
         <div className="flex-1" >
             
 
             <div>
-                <NewChat/>
+                <NewChat/> 
                     {/* modal selection  */}
                     <div className="hidden sm:inline" >
                         <Modelselection /> 

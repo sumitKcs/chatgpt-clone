@@ -5,6 +5,7 @@ import '../styles/globals.css'
 import { authOptions } from '../pages/api/auth/[...nextauth]'
 import Login from '../components/Login'
 import ClientProvider from '../components/ClientProvider'
+import TopBar from '../components/TopBar'
 
 export default async function RootLayout({
   children,
@@ -23,8 +24,10 @@ export default async function RootLayout({
             <Login/>
           ) : (
             <div className="flex">
+             <TopBar />
+                
             {/* sidebar */}
-            <div className='bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem] ' >
+            <div className='bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem] absolute z-10 md:relative md:z-0' >
             <SideBar/>
             </div>
             
