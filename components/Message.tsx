@@ -67,7 +67,7 @@ function Message({message}: Props) {
         alt="user image"/> 
       <p className="whitespace-pre-wrap" >
        {/* prevent typewriter effect by comparing msg time  */}
-        {isChatGPT && (timeDiff < 20 ) ? (
+        {isChatGPT && (timeDiff ===0 ) ? (
          
          <Typewriter 
          text={text}
