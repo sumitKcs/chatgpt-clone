@@ -6,10 +6,13 @@ import { useSession } from "next-auth/react"
 import { useRouter } from "next/navigation";
 import { db } from "../firebase";
 
-function NewChat() {
+type ButtonText = {
+  text?: string
+}
+
+function NewChat({text}: ButtonText ) {
   const router = useRouter()
   const { data: session } = useSession();
-  console.warn("session:", session)
 
   const createNewChat = async () => {
     const doc = await addDoc(
@@ -27,7 +30,7 @@ function NewChat() {
   return (
     <div  onClick={createNewChat} className="border border-gray-700  chatRow" >
         <PlusIcon className="h-4 w-4" />
-        <p>New Chat</p>
+        <p>{ !text ? 'New Chat' : text}</p>
     </div>
   )
 }

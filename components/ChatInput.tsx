@@ -8,9 +8,12 @@ import toast from "react-hot-toast";
 import { db } from "../firebase";
 import ModelSelection from "./ModelSelection"
 import useSWR from 'swr'
+import { useRouter } from "next/navigation";
+
 
 type Props =  {
-  chatId: string;
+  chatId?: string;
+
 }
 
 
@@ -18,14 +21,15 @@ function ChatInput({chatId}: Props) {
 
   const[prompt, setPrompt] = useState("")
   const {data: session} = useSession()
-  
+  const router = useRouter()
+  const params = new URLSearchParams(window.location.search)
   // useSWR to get model 
-
+  const input = params.get('input')
   const { data: model } = useSWR('model', {
     fallbackData: 'text-davinci-003',
   })
-
-
+if(input) setPrompt(input)
+console.log("input", params.get('input'))
 
 
   const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
@@ -44,11 +48,29 @@ function ChatInput({chatId}: Props) {
         avatar: session?.user?.image! || `https://ui-avatars.com/api/?name=${session?.user?.name}`
       }
     }
-    //adding messages to collection
-    await addDoc(
-      collection(db, 'users', session?.user?.email!, 'chats', chatId, 'messages'), 
+    if(!chatId) {
+      addDoc(
+        collection(db, 'users', session?.user?.email!, 'chats'),
+        { 
+          messges: [],
+          userId: session?.user?.email!,
+          createdAt: serverTimestamp()
+        }
+        ).then((doc)=> {
+          router.push(`/chat/${doc.id}?input=${input}`)
+        })
+      
+  }else{
+   
+
+     //adding messages to collection
+     await addDoc(
+      collection(db, 'users', session?.user?.email!, 'chats', chatId!, 'messages'), 
       message
     )
+
+  }
+   
 // toast notification to say loading
     const notification = toast.loading('ChatGPT is thinking...');
 

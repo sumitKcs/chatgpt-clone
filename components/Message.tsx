@@ -2,6 +2,7 @@ import { DocumentData } from "firebase/firestore"
 import Typewriter from 'react-ts-typewriter';
 import parse from 'html-react-parser';
 import { useScrollBy } from "react-use-window-scroll";
+import { useState } from "react";
 
 
 
@@ -19,11 +20,15 @@ function Message({message}: Props) {
     const scrollBy = useScrollBy();
     const chats  = document.getElementById("chats")!
     let lastScrollTop: number;
-    let messageTime = message.createdAt.seconds
-    messageTime = new Date(messageTime)
-    const currentTime = new Date()
-    const timeDiff: number = Math.floor((currentTime - messageTime) / 1000 )
-  console.log("message:", message)
+    // const [timeDiff, setTimeDiff] = useState(0);
+  let timeDiff
+    if(isChatGPT) {
+      let messageTimestamp = message?.createdAt?.seconds! 
+      const currentTimeStamp = Math.floor(Date.now() / 1000)
+       timeDiff = currentTimeStamp - messageTimestamp
+      // setTimeDiff(timeDiff)
+    }
+ 
 
     let inetervalTIme = setInterval(function() {
       chats.scrollTop  = chats?.scrollHeight;
@@ -53,7 +58,7 @@ function Message({message}: Props) {
         alt="user image"/> 
       <p className="whitespace-pre-wrap" >
        {/* prevent typewriter effect by comparing msg time  */}
-        {isChatGPT ? (
+        {isChatGPT && (timeDiff === 0) ? (
          
          <Typewriter 
          text={text}
