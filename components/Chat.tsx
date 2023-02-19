@@ -41,7 +41,7 @@ function Chat({chatId}: Props) {
 
 
   return (
-    <div className="flex-1 overflow-y-auto overflow-x-hidden" id="chats">
+    <div className="flex-1 overflow-y-auto overflow-x-hidden py-5 " id="chats">
       
       
       {docMessage?.empty && (

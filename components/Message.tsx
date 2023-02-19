@@ -20,14 +20,14 @@ function Message({message}: Props) {
     const scrollBy = useScrollBy();
     const chats  = document.getElementById("chats")!
     let lastScrollTop: number;
+   let timeDiff
     // const [timeDiff, setTimeDiff] = useState(0);
-  let timeDiff
-    if(isChatGPT) {
+  
       let messageTimestamp = message?.createdAt?.seconds! 
       const currentTimeStamp = Math.floor(Date.now() / 1000)
-       timeDiff = currentTimeStamp - messageTimestamp
+      timeDiff = (currentTimeStamp - messageTimestamp)
       // setTimeDiff(timeDiff)
-    }
+ 
  
 
     let inetervalTIme = setInterval(function() {
@@ -35,16 +35,25 @@ function Message({message}: Props) {
     }, 1000);
 
     lastScrollTop = chats.scrollTop
+    chats.addEventListener("touchmove", function(){ 
+    
+      clearInterval(inetervalTIme)
+
+      }, false);
+
       chats.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
-        let st = window.pageYOffset || chats.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        let st = window.pageYOffset || chats.scrollTop; 
+        // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
         if (st > lastScrollTop) {
            // downscroll code
         } else if (st < lastScrollTop) {
-           // upscroll code
+           //upscroll code
            clearInterval(inetervalTIme)
         } // else was horizontal scroll
         lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
      }, false);
+
+    
       
 
 
@@ -58,7 +67,7 @@ function Message({message}: Props) {
         alt="user image"/> 
       <p className="whitespace-pre-wrap" >
        {/* prevent typewriter effect by comparing msg time  */}
-        {isChatGPT && (timeDiff === 0) ? (
+        {isChatGPT && (timeDiff < 20 ) ? (
          
          <Typewriter 
          text={text}

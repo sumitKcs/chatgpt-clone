@@ -22,14 +22,12 @@ function ChatInput({chatId}: Props) {
   const[prompt, setPrompt] = useState("")
   const {data: session} = useSession()
   const router = useRouter()
-  const params = new URLSearchParams(window.location.search)
   // useSWR to get model 
-  const input = params.get('input')
+ 
   const { data: model } = useSWR('model', {
     fallbackData: 'text-davinci-003',
   })
-if(input) setPrompt(input)
-console.log("input", params.get('input'))
+
 
 
   const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
@@ -92,10 +90,10 @@ console.log("input", params.get('input'))
   }
 
   return (
-    <div className="bg-gray-700/50 text-gray-400 rounded-lg text-sm" >
+    <div className="bg-gray-700/90 text-gray-400 rounded-lg text-sm  sticky bottom-2 mt-2" >
       <form  onSubmit={sendMessage} className="p-5 space-x-5 flex" >
     <input 
-    className="bg-transparent focus:outline-none flex-1 disabled:cursor-not-allowed  disabled:text-gray-300  text-white"
+    className= " bg-transparent focus:outline-none flex-1 disabled:cursor-not-allowed  disabled:text-gray-300  text-white"
     disabled={!session}
     value={prompt}
     onChange={(e) => setPrompt(e.target.value)}
@@ -111,10 +109,10 @@ console.log("input", params.get('input'))
     </button>
       </form>
 
-      <div className="md:hidden" >
+      {/* <div className="md:hidden" > */}
         {/* modal selection  */}
-        <ModelSelection/>
-      </div>
+        {/* <ModelSelection/>
+      </div> */}
     </div>
   )
 }

@@ -26,13 +26,13 @@ export default async function RootLayout({
             <div className="flex">
              
             {/* sidebar */}
-            <div className='bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem] absolute z-10 md:relative md:z-0' >
+            <div className='bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem] absolute z-10 md:relative md:z-0 ' >
             <SideBar/>
             </div>
             
             {/* client provider -Notification */}
             <ClientProvider/>
-            <div className="bg-[#343541] flex-1" ><TopBar />{children}</div>
+            <div className="bg-[#343541] flex-1 " ><TopBar />{children}</div>
             </div>
             
           )

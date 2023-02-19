@@ -15,17 +15,27 @@ function SideBar() {
     const [chats, loading, error] = useCollection(
         session && query(collection(db, 'users', session?.user?.email!, "chats"), orderBy("createdAt", "asc"))
     )
-    
+    const xHandler = () => {
+        const sideBar: HTMLElement | null = document.getElementById("side-bar")
+        const xButton: HTMLElement | null = document.getElementById("x-button")
+        const topBar: HTMLElement | null = document.getElementById("top-bar")
+        sideBar!.style.display = "none"
+        xButton!.style.display = "none"
+        topBar!.style.display = ""
+      }
+     
   
   return (
-    <div  id="side-bar" className="p-2 hidden md:flex flex-col h-screen" >
+    <div  id="side-bar" className="p-2 hidden md:flex flex-col h-screen " >
         <div className="flex-1" >
             
-
             <div>
+                <div onClick={xHandler} id="x-button" className=" bg-[#202123] pl-5 float-right md:hidden " >
+                <XCircleIcon className="w-10 h-10 text-white " />
+            </div>
                 <NewChat/> 
                     {/* modal selection  */}
-                    <div className="hidden sm:inline" >
+                    <div className="inline" >
                         <Modelselection /> 
                     </div>
                 
@@ -50,14 +60,14 @@ function SideBar() {
         </div >
         {
             session && (
-                <div className="flex flex-col justify-between items-center mb-[20vh] md:mb-[10vh] h-auto" >
+                <div className="flex flex-col justify-between items-center mb-[10vh] md:mb-[3vh] h-auto" >
                     <img 
                     
                     src={session?.user?.image!}
                     alt="profile pic"
                     className="h-13 w-13 md:h-15 md:w-15 rounded-full cursor-pointer mx-auto  hover:opacity-50"
                     />
-                    <div className="w-15 h-15 text-sm text-white my-5 border border-gray-700 rounded-lg px-6 "> 
+                    <div className="w-15 h-15 py-2 px-6  text-sm text-white my-5 border border-gray-700 rounded-lg "> 
                         <button className="" onClick={() => signOut()} >Sign Out</button>  
                     </div>
                 </div>
