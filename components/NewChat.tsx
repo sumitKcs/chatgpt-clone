@@ -30,7 +30,7 @@ function NewChat({text}: ButtonText ) {
   return (
     <div  onClick={createNewChat} className="border border-gray-700  chatRow" >
         <PlusIcon className="h-4 w-4" />
-        <p>{ !text ? 'New Chat' : text}</p>
+        <p className="text-lg" >{ !text ? 'New Chat' : text}</p>
     </div>
   )
 }

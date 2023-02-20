@@ -1,4 +1,4 @@
-import { BoltIcon, ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import { BoltIcon, ExclamationTriangleIcon, SunIcon } from '@heroicons/react/24/outline'
 import ChatGPT from '../components/ChatGPT'
 import NewChat from '../components/NewChat'
 
@@ -15,13 +15,24 @@ function HomePage() {
      <ChatGPT/>
       <div>
         <div className="flex flex-col items-center justify-center mb-5" >
-        <BoltIcon className="h-8 w-8"/>
-          <h2>Capabilites</h2>
+        <SunIcon className="h-8 w-8"/>
+          <h2>Examples</h2>
         </div>
         <div className="space-y-2" >
           <p className="infoText">"Explain Something to me"</p>
-          <p className="infoText">"What is the difference between a dog and a cat"</p>
-          <p className="infoText hidden md:flex ">"What is the color of the sun?"</p>
+          <p className="infoText">"How do I make an HTTP request?"</p>
+          <p className="infoText hidden md:flex ">"Got any Creative ideas for a 10 year old's birthday?"</p>
+        </div>
+      </div>
+      <div>
+        <div className="flex flex-col items-center justify-center mb-5" >
+        <BoltIcon className="h-8 w-8"/>
+          <h2>Capabilties</h2>
+        </div>
+        <div className="space-y-2" >
+          <p className="infoText">Remembers previous chat history</p>
+          <p className="infoText">Allows user to provide follow-up corrections</p>
+          <p className="infoText hidden md:flex">Able decline inappropriate requests</p>
         </div>
       </div>
       <div>
@@ -30,13 +41,16 @@ function HomePage() {
           <h2>Limitations</h2>
         </div>
         <div className="space-y-2" >
-          <p className="infoText">"Explain Something to me"</p>
-          <p className="infoText">"What is the difference between a dog and a cat"</p>
-          <p className="infoText hidden md:flex">"What is the color of the sun?"</p>
+          <p className="infoText hidden md:flex">May generate incorrect information</p>
+          <p className="infoText flex md:hidden">Sometimes Incorrect</p>
+          <p className="infoText hidden md:flex">May produce harmful content</p>
+          <p className="infoText hidden md:flex">Limited knowledge of world and events after 2021</p>
+          <p className="infoText flex md:hidden">Limited knowledge of events upto 2021 only</p>
         </div>
       </div>
     </div>
-    <div className='my-5 py-5 px-10 font-bold animate-bounce md:hidden' >
+    
+    <div className=' py-5 px-10 font-bold md:hidden' >
     <NewChat text="Start Conversation" />  
     </div>
   </div>
