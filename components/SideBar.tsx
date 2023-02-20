@@ -6,6 +6,7 @@ import { useSession,signOut } from "next-auth/react"
 import { useCollection } from 'react-firebase-hooks/firestore';
 import { db } from "../firebase";
 import ChatRow from "./ChatRow";
+import DevelopedBy from "./DevelopedBy";
 import Modelselection from "./ModelSelection";
 import NewChat from "./NewChat"
 
@@ -68,7 +69,10 @@ function SideBar() {
                     className="h-13 w-13 md:h-15 md:w-15 rounded-full cursor-pointer mx-auto  hover:opacity-50"
                     />
                     <div className="w-15 h-15 py-2 px-6  text-sm text-white my-5 border border-gray-700 rounded-lg "> 
-                        <button className="" onClick={() => signOut()} >Sign Out</button>  
+                        <button onClick={() => signOut()} >Sign Out</button>  
+                    </div>
+                    <div className=""> 
+                        <DevelopedBy/>
                     </div>
                 </div>
                

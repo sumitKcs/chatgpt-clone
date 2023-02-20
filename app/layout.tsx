@@ -35,7 +35,7 @@ export default async function RootLayout({
         <meta name="description" content="A heart animation app. Click to visit website." />
         <meta name="theme-color" content="#000000" />
         <meta name="keywords" content="HTML, CSS, JavaScript, AnimeJs, heart, animation" />
-        <meta name="author" content="Er. Sumit Kumar" />
+        <meta name="author" content="Er. Sumit Kr." />
         <title>ChatGPT</title>
         <link rel="icon" type="image/png" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />

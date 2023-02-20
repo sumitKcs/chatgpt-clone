@@ -2,10 +2,10 @@ import Link from "next/link"
 
 function DevelopedBy() {
   return (
-    <div className="h-[3.6rem] text-[#cccccc] flex-col justify-center items-center border">
+    <div className="h-[3.6rem] text-gray-500 flex-col justify-center items-center">
         <div className="flex-1">
         Developed by &nbsp;
-        <Link className="underline" href={"https://twitter.com/risesumit"} >
+        <Link className="underline text-blue-500" href={"https://twitter.com/risesumit"} >
              Er. Sumit KR. 
         </Link>
         </div>
