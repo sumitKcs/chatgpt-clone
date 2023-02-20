@@ -38,9 +38,9 @@ export default async function RootLayout({
         <meta name="author" content="Er. Sumit Kumar" />
         <title>ChatGPT</title>
         <link rel="icon" type="image/png" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="canonical" href="https://chatgpt-sumit.vercel.app/" />
         {/* <link rel="manifest" href="manifest.webmanifest" /> */}
 
