@@ -34,7 +34,6 @@ ChatGPT (Chat Generative Pre-trained Transformer) is a chatbot developed by Open
 
 `**Note**`: This app requires API key from <a href="https://openai.com/api/" >OPENAI</a>, <a href="https://console.cloud.google.com/" >Google OAuth Client ID and Client Secret</a> and <a href="https://firebase.google.com/" >Firebase Service Account Key</a>
 
-
 ### 1. Download Node.js and `npm` (follow instructions [here](https://nodejs.org/en/))
 
 ### 2. Git clone and cd into the repo folder:
@@ -82,7 +81,7 @@ npm run dev
 
 <p id="tech-stack"></p>
 
-<a href=#installation><img src="https://i.postimg.cc/9FhnG04t/tech-stack.png" width="220" ></a>
+<a href=#installation><img src="https://i.postimg.cc/C10hyYPG/tech-stack.png ></a>
 
 - [Next.js 13](https://nextjs.org)
 - [Tailwind CSS](https://tailwindcss.com/)
