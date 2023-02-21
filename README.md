@@ -20,6 +20,7 @@ ChatGPT (Chat Generative Pre-trained Transformer) is a chatbot developed by Open
 <a href=#table-of-contents>![Table of Contents](https://res.cloudinary.com/dn1e07eul/image/upload/v1659241355/Readme%20Headers/inter-toc_euxbbw.png)</a>
 
 - [Installation](#installation)
+- [Tech Stack](#tech-stack)
 - [Live Site](#live-site)
 - [Resources](#resources)
 - [Let's Connect!](#lets-connect) <br>
@@ -81,7 +82,7 @@ npm run dev
 
 <p id="tech-stack"></p>
 
-<a href=#installation>![tech-stack](https://i.postimg.cc/C10hyYPG/tech-stack.png)</a>
+## Tech Stack
 
 - [Next.js 13](https://nextjs.org)
 - [Tailwind CSS](https://tailwindcss.com/)
