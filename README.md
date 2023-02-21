@@ -97,11 +97,9 @@ npm run dev
 
 <a href="https://github.com/sumitKcs/canvas-animation-effects">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
 
-<a href="https://sumitkcs.github.io/canvas-animation-effects/">![Live Site](https://sumitkcs.github.io/canvas-animation-effects/assets/img/preview.webp)</a>
 
-• **[Spectrum Mouse Trail](https://sumitkcs.github.io/canvas-animation-effects/)** is best viewed on a desktop or laptop computer browser.
+• **[ChatGPT Clone](https://sumitkcs.github.io/canvas-animation-effects/)** is a responsive web app can be viewed on any device.
 
-• **[Spectrum Mouse Trail](https://sumitkcs.github.io/canvas-animation-effects/)** is a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps).
 
 <br>
 
