@@ -37,7 +37,7 @@ ChatGPT (Chat Generative Pre-trained Transformer) is a chatbot developed by Open
 
 ### 1. Download Node.js and `npm` (follow instructions [here](https://nodejs.org/en/))
 
-#### 2. Git clone and cd into the repo folder:
+### 2. Git clone and cd into the repo folder:
 
 ```bash
 https://github.com/sumitKcs/chatgpt-clone.git && cd chatgpt-clone
@@ -49,7 +49,7 @@ https://github.com/sumitKcs/chatgpt-clone.git && cd chatgpt-clone
 npm install
 ```
 
-#### 4. In root directory of the project files, create a `.env.local` file
+### 4. In root directory of the project files, create a `.env.local` file
 
 ```bash
 .env.local
