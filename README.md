@@ -82,7 +82,7 @@ npm run dev
 
 <p id="tech-stack"></p>
 
-<a href=#installation><img src="https://i.postimg.cc/9FhnG04t/tech-stack.png" ></a>
+<a href=#installation><img src="https://i.postimg.cc/9FhnG04t/tech-stack.png" width="220" ></a>
 
 - [Next.js 13](https://nextjs.org)
 - [Tailwind CSS](https://tailwindcss.com/)
