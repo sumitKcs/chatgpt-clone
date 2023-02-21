@@ -64,7 +64,8 @@ function SideBar() {
                 <div className="flex flex-col justify-between items-center mb-[10vh] md:mb-[3vh] h-auto" >
                     <img 
                     
-                    src={session?.user?.image!}
+                    src={session?.user?.image! || 
+                    `https://ui-avatars.com/api/?name=${session?.user?.name} `}
                     alt="profile pic"
                     className="h-13 w-13 md:h-15 md:w-15 rounded-full cursor-pointer mx-auto  hover:opacity-50"
                     />

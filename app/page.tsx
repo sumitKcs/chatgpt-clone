@@ -32,7 +32,7 @@ function HomePage() {
         <div className="space-y-2" >
           <p className="infoText">Remembers previous chat history</p>
           <p className="infoText">Allows user to provide follow-up corrections</p>
-          <p className="infoText hidden md:flex">Able decline inappropriate requests</p>
+          <p className="infoText hidden md:flex">Declines inappropriate requests</p>
         </div>
       </div>
       <div>
