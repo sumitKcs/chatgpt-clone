@@ -79,8 +79,9 @@ npm run dev
 
 <br>
 
+<p id="tech-stack"></p>
 
-# Tech Stack
+<a href=#installation><img src="https://i.postimg.cc/9FhnG04t/tech-stack.png" width="200" ></a>
 
 - [Next.js 13](https://nextjs.org)
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -95,11 +96,9 @@ npm run dev
 
 <p id="live-site"><p>
 
-<a href="https://github.com/sumitKcs/canvas-animation-effects">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
-
+<a href="https://chatgpt-sumit.vercel.app/">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
 
 • **[ChatGPT Clone](https://sumitkcs.github.io/canvas-animation-effects/)** is a responsive web app can be viewed on any device.
-
 
 <br>
 
@@ -112,7 +111,6 @@ npm run dev
 - #### [Let’s build ChatGPT Messenger 2.0 with REACT! (Next.js 13, Firebase, Tailwind CSS, TypeScript)](https://www.youtube.com/watch?v=V6Hq_EX2LLM) by [Sonny Sangha](https://www.youtube.com/@SonnySangha)
 
 - #### [Build and Deploy Your Own ChatGPT AI App in JavaScript | OpenAI, Machine Learning](https://www.youtube.com/watch?v=2FeymQoKvrk) by [JavaScript Mastery ](https://www.youtube.com/@javascriptmastery)
-
 
 <br>
 
@@ -127,8 +125,3 @@ npm run dev
 #
 
 <a href=#header>![Back to Top](https://res.cloudinary.com/dn1e07eul/image/upload/v1659314281/Readme%20Headers/inter-congrats_m4p3ck.png)</a>
-
-
-
-
-
