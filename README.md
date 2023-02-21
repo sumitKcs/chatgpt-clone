@@ -66,7 +66,7 @@ FIREBASE_SERVICE_ACCOUNT_KEY=YOUR_FIREBASE_SERVICE_ACCOUNT_KEY
 
 ```
 
-#### 3. Run the server
+### 3. Run the server
 
 ```bash
 npm start
