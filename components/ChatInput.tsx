@@ -85,7 +85,7 @@ function ChatInput({chatId}: Props) {
     ).then(()=> {
       // toast notification to say successful 
       toast.success('ChatGPT has responded!', {id: notification})
-    })
+    }).catch(()=> console.log("Server is busy! PLease try later."))
 
   }
 
