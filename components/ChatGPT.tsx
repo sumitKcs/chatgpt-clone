@@ -1,11 +1,12 @@
-import { BoltIcon, ExclamationTriangleIcon, SunIcon } from "@heroicons/react/24/outline"
-import NewChat from "./NewChat"
+import {
+  BoltIcon,
+  ExclamationTriangleIcon,
+  SunIcon,
+} from "@heroicons/react/24/outline";
+import NewChat from "./NewChat";
 
 function ChatGPT() {
-  return (
-<>
-</>
-)
+  return <></>;
 }
 
-export default ChatGPT
+export default ChatGPT;

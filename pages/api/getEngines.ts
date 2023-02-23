@@ -10,7 +10,6 @@ type Option = {
 
 type Data = {
     modelOptions: Option[];
-    // answer: string
 };
 
 
