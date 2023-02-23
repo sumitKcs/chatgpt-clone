@@ -1,6 +1,5 @@
 import Chat from "../../../components/Chat";
 import ChatInput from "../../../components/ChatInput";
-import DevelopedBy from "../../../components/DevelopedBy";
 
 type Props = {
   params: {
@@ -12,7 +11,6 @@ function ChatPage({ params: { id } }: Props) {
     <div className="flex flex-col h-[98svh] md:h-screen overflow-hidden ">
       <Chat chatId={id} />
       <ChatInput chatId={id} />
-      {/* <DevelopedBy/> */}
     </div>
   );
 }

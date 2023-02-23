@@ -3,7 +3,6 @@ import {
   ExclamationTriangleIcon,
   SunIcon,
 } from "@heroicons/react/24/outline";
-import ChatGPT from "../components/ChatGPT";
 import NewChat from "../components/NewChat";
 
 function HomePage() {
@@ -12,7 +11,6 @@ function HomePage() {
       <h1 className="text-5xl font-bold mb-20">ChatGPT</h1>
 
       <div className="flex space-x-2 text-center">
-        <ChatGPT />
         <div>
           <div className="flex flex-col items-center justify-center mb-5">
             <SunIcon className="h-8 w-8" />

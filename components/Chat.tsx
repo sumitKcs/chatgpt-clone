@@ -3,7 +3,6 @@
 import { ArrowDownCircleIcon, XCircleIcon } from "@heroicons/react/24/outline";
 import { collection, orderBy, query } from "firebase/firestore";
 import { useSession } from "next-auth/react";
-import { useEffect, useState } from "react";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../firebase";
 import Message from "./Message";

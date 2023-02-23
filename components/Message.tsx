@@ -15,7 +15,6 @@ function Message({ message }: Props) {
   let messageTimestamp = message?.createdAt?.seconds!;
   const currentTimeStamp = Math.floor(Date.now() / 1000);
   timeDiff = currentTimeStamp - messageTimestamp;
-  // setTimeDiff(timeDiff)
 
   let inetervalTIme = setInterval(function () {
     chats.scrollTop = chats?.scrollHeight;

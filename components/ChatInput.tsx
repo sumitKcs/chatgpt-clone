@@ -6,6 +6,7 @@ import { useSession } from "next-auth/react";
 import { FormEvent, useState } from "react";
 import toast from "react-hot-toast";
 import { db } from "../firebase";
+import ModelSelection from "./ModelSelection";
 import useSWR from "swr";
 import { useRouter } from "next/navigation";
 
@@ -106,6 +107,11 @@ function ChatInput({ chatId }: Props) {
           <PaperAirplaneIcon className="h-4 2-4 -rotate-45" />
         </button>
       </form>
+
+      {/* <div className="md:hidden" > */}
+      {/* modal selection  */}
+      {/* <ModelSelection/>
+      </div> */}
     </div>
   );
 }

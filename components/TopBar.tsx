@@ -1,5 +1,5 @@
 "use client";
-import { Bars3Icon, XCircleIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 
 function TopBar() {
   const topBarHandle = () => {
