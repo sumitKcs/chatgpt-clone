@@ -2,7 +2,6 @@
 
 import useSWR from "swr";
 import Select from "react-select";
-import { useEffect, useState } from "react";
 
 //fetch modals without using curly braces
 //with curly braces, useSWR not works
