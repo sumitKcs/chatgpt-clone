@@ -17,7 +17,6 @@ type Props = {
 function ChatInput({ chatId }: Props) {
   const [prompt, setPrompt] = useState("");
   const { data: session } = useSession();
-  const router = useRouter();
   // useSWR to get model
 
   const { data: model } = useSWR("model", {
@@ -42,28 +41,18 @@ function ChatInput({ chatId }: Props) {
           `https://ui-avatars.com/api/?name=${session?.user?.name}`,
       },
     };
-    if (!chatId) {
-      addDoc(collection(db, "users", session?.user?.email!, "chats"), {
-        messges: [],
-        userId: session?.user?.email!,
-        createdAt: serverTimestamp(),
-      }).then((doc) => {
-        router.push(`/chat/${doc.id}?input=${input}`);
-      });
-    } else {
-      //adding messages to collection
-      await addDoc(
-        collection(
-          db,
-          "users",
-          session?.user?.email!,
-          "chats",
-          chatId!,
-          "messages"
-        ),
-        message
-      );
-    }
+    //adding messages to collection
+    await addDoc(
+      collection(
+        db,
+        "users",
+        session?.user?.email!,
+        "chats",
+        chatId!,
+        "messages"
+      ),
+      message
+    );
 
     // toast notification to say loading
     const notification = toast.loading("ChatGPT is thinking...");

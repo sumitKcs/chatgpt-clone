@@ -8,7 +8,7 @@
 
 <br>
 
-<a href="https://chatgpt-sumit.vercel.app/">![ChatGPT Clone](https://i.postimg.cc/cCwBVfDJ/Screenshot-from-2023-02-21-13-41-39.png)</a>
+<a href="https://chatgpt-sumit.up.railway.app/">![ChatGPT Clone](https://i.postimg.cc/cCwBVfDJ/Screenshot-from-2023-02-21-13-41-39.png)</a>
 
 ChatGPT (Chat Generative Pre-trained Transformer) is a chatbot developed by OpenAI and launched in November 2022. It is built on top of OpenAI's GPT-3 family of large language models and has been fine-tuned (an approach to transfer learning) using both supervised and reinforcement learning techniques.
 
@@ -97,9 +97,9 @@ npm run dev
 
 <p id="live-site"><p>
 
-<a href="https://chatgpt-sumit.vercel.app/">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
+<a href="https://chatgpt-sumit.up.railway.app/">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
 
-• **[ChatGPT Clone](https://chatgpt-sumit.vercel.app/)** is a responsive web app can be viewed on any device.
+• **[ChatGPT Clone](https://chatgpt-sumit.up.railway.app/)** is a responsive web app can be viewed on any device.
 
 <br>
 
