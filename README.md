@@ -16,18 +16,6 @@ ChatGPT (Chat Generative Pre-trained Transformer) is a chatbot developed by Open
 
 <br>
 
-
-
-
-
-
-
-
-
-#
-
-<br>
-
 <p id="installation"><p>
 
 # Installation
@@ -98,7 +86,6 @@ npm run dev
 
 # Live Site
 
-
 • **[ChatGPT Clone](https://chatgpt-sumit.up.railway.app/)** deployed on Railway.app.
 
 <br>
@@ -106,5 +93,3 @@ npm run dev
 #
 
 <p id="resources"><p>
-
-
